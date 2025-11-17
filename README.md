@@ -195,25 +195,14 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @misc{coral_classification_cbam,
-  author = {Your Name},
+  author = {Roudha},
   title = {Coral Classification with CBAM-Enhanced ResNet18},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/YOUR_USERNAME/coral-classification-project}
+  url = {https://github.com/RoudhaKhalifa/coral-classification-project}
 }
 ```
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub or contact [your-email@example.com]
 
 ## 🙏 Acknowledgments
 
