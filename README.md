@@ -189,19 +189,6 @@ self.ca = ChannelAttention(planes, ratio=8)  # More parameters
 self.sa = SpatialAttention(kernel_size=5)  # Smaller receptive field
 ```
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{coral_classification_cbam,
-  author = {Roudha},
-  title = {Coral Classification with CBAM-Enhanced ResNet18},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/RoudhaKhalifa/coral-classification-project}
-}
-```
 
 
 ## Acknowledgments
