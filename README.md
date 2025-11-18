@@ -2,7 +2,7 @@
 
 A deep learning project for classifying healthy vs bleached corals using ResNet18 with Convolutional Block Attention Module (CBAM) and CLAHE preprocessing.
 
-## 🌊 Project Overview
+## Project Overview
 
 This project implements a computer vision model to distinguish between healthy and bleached coral reefs, which is crucial for monitoring ocean health and climate change impacts. The model combines:
 
@@ -11,7 +11,7 @@ This project implements a computer vision model to distinguish between healthy a
 - **CLAHE (Contrast Limited Adaptive Histogram Equalization)** preprocessing
 - **Grad-CAM** visualization for model interpretability
 
-## 🎯 Features
+## Features
 
 - Binary classification: Healthy vs Bleached corals
 - Channel and spatial attention mechanisms via CBAM
@@ -20,7 +20,7 @@ This project implements a computer vision model to distinguish between healthy a
 - Model interpretability through Grad-CAM visualizations
 - Detailed performance metrics and confusion matrix
 
-## 📋 Requirements
+## Requirements
 
 ```bash
 torch
@@ -35,7 +35,7 @@ tqdm
 kagglehub
 ```
 
-## 🚀 Installation
+## Installation
 
 1. Clone this repository:
 ```bash
@@ -48,7 +48,7 @@ cd coral-classification-project
 pip install torch torchvision torchcam opencv-python numpy matplotlib scikit-learn Pillow tqdm kagglehub
 ```
 
-## 📊 Dataset
+## Dataset
 
 The project uses the [Corals Classification Dataset](https://www.kaggle.com/datasets/aneeshdighe/corals-classification) from Kaggle.
 
@@ -92,7 +92,7 @@ The model integrates CBAM attention modules into ResNet18's layer4:
 - CLAHE enhancement
 - Resize to 224×224
 
-## 🔧 Usage
+## Usage
 
 ### Training the Model
 
@@ -135,7 +135,7 @@ The model generates comprehensive evaluation metrics:
 - **Confusion Matrix** showing true vs predicted classifications
 - **Grad-CAM Visualizations** highlighting regions the model focuses on
 
-## 🔍 Grad-CAM Visualization
+## Grad-CAM Visualization
 
 The project includes Grad-CAM (Gradient-weighted Class Activation Mapping) to visualize which parts of the coral images the model focuses on when making predictions:
 
@@ -149,7 +149,7 @@ Visualizations show:
 - Heatmap overlays indicating attention regions
 - Predicted class labels
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 coral-classification-project/
@@ -160,7 +160,7 @@ coral-classification-project/
 └── resnet18_cbam_coral_clahe.pth  # Saved model weights (after training)
 ```
 
-## 🎓 Key Concepts
+## Key Concepts
 
 ### CBAM (Convolutional Block Attention Module)
 Enhances CNN feature maps through sequential channel and spatial attention, allowing the network to focus on important features and regions.
@@ -171,7 +171,7 @@ Improves local contrast in images, particularly useful for underwater coral imag
 ### Transfer Learning
 Uses ImageNet pre-trained ResNet18 as a starting point, leveraging learned features for coral classification.
 
-## 🛠️ Customization
+## Customization
 
 ### Adjust Training Parameters:
 ```python
@@ -189,7 +189,7 @@ self.ca = ChannelAttention(planes, ratio=8)  # More parameters
 self.sa = SpatialAttention(kernel_size=5)  # Smaller receptive field
 ```
 
-## 📝 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
@@ -204,7 +204,7 @@ If you use this code in your research, please cite:
 ```
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset: [Aneesh Dighe's Corals Classification Dataset](https://www.kaggle.com/datasets/aneeshdighe/corals-classification)
 - CBAM Paper: [CBAM: Convolutional Block Attention Module](https://arxiv.org/abs/1807.06521)
