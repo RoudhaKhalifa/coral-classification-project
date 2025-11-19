@@ -63,7 +63,7 @@ path = kagglehub.dataset_download("aneeshdighe/corals-classification")
 - Testing set: Separate test images for validation
 - Two classes: `healthy_corals` and `bleached_corals`
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ### CBAM-ResNet18
 The model integrates CBAM attention modules into ResNet18's layer4:
@@ -126,7 +126,7 @@ model.load_state_dict(torch.load("resnet18_cbam_coral_clahe.pth"))
 model.eval()
 ```
 
-## 📈 Results
+## Results
 
 The model generates comprehensive evaluation metrics:
 
